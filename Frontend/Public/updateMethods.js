@@ -52,5 +52,5 @@ form.addEventListener("submit", (e) => {
     });
 
   // Redirect to a new page
-  //window.location.href = "./members.html";
+  window.location.href = "./members.html";
 });

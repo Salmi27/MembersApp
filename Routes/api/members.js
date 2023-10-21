@@ -41,7 +41,7 @@ router.put("/:id", (req, res) => {
   if (found) {
     members.forEach((member) => {
       const updMember = req.body;
-      if (member.id === parseInt(req.params.id)) {
+      if (member.id == req.params.id) {
         member.name = updMember.name ? updMember.name : member.name;
         member.email = updMember.email ? updMember.email : member.email;
 
