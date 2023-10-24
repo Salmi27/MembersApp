@@ -19,6 +19,7 @@ let returnMembers = function (url) {
                 <td>${member.status}</td>
                 <td>
                   <a href='./updateMember.html?id=${member.id}' class='update-btn-${member.id}' style='text-decoration:none;'>⬆️</a>
+                  <a href='./deleteMember.html?id=${member.id}' class='delete-btn-${member.id}' style='text-decoration:none;'>🗑️</a>
                 </td>
             </tr>
         `;
