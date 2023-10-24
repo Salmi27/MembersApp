@@ -11,25 +11,25 @@
     />
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Update Member</title>
+    <title>Delete Member</title>
   </head>
   <body>
     <div class="d-flex flex-column align-items-center">
       <div class="custom-container">
-        <h1 class="p-2 text-center">Update Member</h1>
+        <h1 class="p-2 text-center">Delete Member</h1>
 
         <div class="custom-container p-2">
           <form id="myForm">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" class="form-control" id="name" />
+              <input type="text" id="name" class="form-control" id="name" disabled/>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" class="form-control" id="email" />
+              <input type="email" id="email" class="form-control" id="email" disabled/>
             </div>
-            <button type="submit" class="btn btn-success custom-button">
-              Update
+            <button type="submit" class="btn btn-danger custom-button">
+              Delete
             </button>
           </form>
         </div>
@@ -42,6 +42,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./updateMember.js"></script>
+    <script src="./deleteMember.js"></script>
   </body>
 </html>

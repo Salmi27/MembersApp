@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require('cors');
+const cors = require("cors");
 const path = require("path");
 
 const logger = require("./Middleware/logger.js");
@@ -25,7 +25,8 @@ app.use("/", require("./Routes/api/home"));
 
 // Get about (3: Same page)
 app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "about.html"));
+  res.sendFile("E:/ExpressJS_Intro/Frontend/about.html");
+  // res.sendFile(path.join(__dirname, "Frontend", "about.html"));
 });
 
 const PORT = process.env.PORT || 3000;

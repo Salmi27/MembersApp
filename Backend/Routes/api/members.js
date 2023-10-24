@@ -55,11 +55,11 @@ router.put("/:id", (req, res) => {
 
 // Delete a member
 router.delete("/:id", (req, res) => {
-  const found = members.some((member) => member.id === parseInt(req.params.id));
+  const found = members.some((member) => member.id == req.params.id);
 
   if (found) {
     const memberIndex = members.findIndex(
-      (member) => member.id === parseInt(req.params.id)
+      (member) => member.id == req.params.id
     );
 
     const deletedMember = members.splice(memberIndex, 1);
